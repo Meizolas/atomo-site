@@ -18,7 +18,7 @@
 <header class="site">
   <div class="nav-shell">
     <a href="#top" class="nav-pill nav-brand-pill" aria-label="Agência Átomo">
-      <img class="brand-logo" src="/images/logo_atomo.png" alt="Agência Átomo" />
+      <img class="brand-logo" src="/images/logo_atomo.webp" alt="Agência Átomo" />
     </a>
 
     <span class="nav-connector" aria-hidden="true"><span class="line"></span></span>
@@ -42,11 +42,29 @@
       </a>
     </div>
 
-    <button class="menu-btn" aria-label="Menu">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="8" x2="20" y2="8"/><line x1="4" y1="16" x2="20" y2="16"/></svg>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <line class="bar-top" x1="3" y1="7" x2="21" y2="7" stroke-linecap="round"/>
+        <line class="bar-bot" x1="3" y1="17" x2="21" y2="17" stroke-linecap="round"/>
+      </svg>
     </button>
   </div>
 </header>
+
+<!-- Mobile navigation -->
+<div class="nav-mobile" id="navMobile" aria-hidden="true">
+  <nav class="nav-mobile-links">
+    <a href="#sobre"       class="nav-mobile-link">Sobre</a>
+    <a href="#servicos"    class="nav-mobile-link">Serviços</a>
+    <a href="#portfolio"   class="nav-mobile-link">Portfólio</a>
+    <a href="#diferenciais" class="nav-mobile-link">Diferenciais</a>
+    <a href="#resultados"  class="nav-mobile-link">Resultados</a>
+    <a href="#contato"     class="nav-mobile-link">Contato</a>
+  </nav>
+  <a class="nav-mobile-cta" href="https://agenciaatomo.com.br/whatsapp" target="_blank" rel="noopener">
+    Fale com um especialista →
+  </a>
+</div>
 
 <main id="top">
 
@@ -90,7 +108,7 @@
             <div class="symbol-glow s3"></div>
             <div class="symbol-ring r2"></div>
             <div class="symbol-ring r1"></div>
-            <img class="symbol-img" src="/images/marca_atomo.png" alt="" />
+            <img class="symbol-img" src="/images/marca_atomo.webp" alt="" />
           </div>
         </div>
 
@@ -143,7 +161,7 @@
         <h2>Estratégia, tecnologia e <span class="accent">performance.</span></h2>
       </div>
 
-      <div style="display:grid;grid-template-columns: 1.1fr .9fr;gap:64px;align-items:start;text-align:left" class="reveal">
+      <div class="about-grid reveal" style="display:grid;grid-template-columns: 1.1fr .9fr;gap:64px;align-items:start;text-align:left">
         <div style="display:flex;flex-direction:column;gap:22px">
           <p class="lead">
             Criamos estratégias orientadas por dados, alinhadas a cada objetivo de negócio. Transformamos investimento em crescimento mensurável.
@@ -153,7 +171,7 @@
           </p>
         </div>
 
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden">
+        <div class="about-mini-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden">
           <div style="padding:24px;background:var(--bg-2)">
             <div class="mono" style="color:var(--red);margin-bottom:10px">● 01</div>
             <h4 style="font-size:15px;font-weight:500;letter-spacing:-.01em">Dados</h4>
@@ -274,7 +292,7 @@
               </div>
               <div class="pf-slide-visual">
                 <div class="pf-laptop">
-                  <div class="scr-wrap"><div class="scr"><img src="assets/portfolio/kubo.png" alt="Kubo" loading="lazy"/></div></div>
+                  <div class="scr-wrap"><div class="scr"><img src="/images/kubo-adilsonsantos-lp.webp" alt="Kubo" loading="lazy"/></div></div>
                   <div class="base"></div>
                 </div>
               </div>
@@ -290,7 +308,7 @@
               </div>
               <div class="pf-slide-visual">
                 <div class="pf-laptop">
-                  <div class="scr-wrap"><div class="scr"><img src="assets/portfolio/donagraca.png" alt="Dona Graça" loading="lazy"/></div></div>
+                  <div class="scr-wrap"><div class="scr"><img src="/images/dona-graca-lp.webp" alt="Dona Graça" loading="lazy"/></div></div>
                   <div class="base"></div>
                 </div>
               </div>
@@ -306,7 +324,7 @@
               </div>
               <div class="pf-slide-visual">
                 <div class="pf-laptop">
-                  <div class="scr-wrap"><div class="scr"><img src="assets/portfolio/wsengenharia.png" alt="WS Engenharia" loading="lazy"/></div></div>
+                  <div class="scr-wrap"><div class="scr"><img src="/images/ws-engenharia-lp.webp" alt="WS Engenharia" loading="lazy"/></div></div>
                   <div class="base"></div>
                 </div>
               </div>
@@ -322,7 +340,7 @@
               </div>
               <div class="pf-slide-visual">
                 <div class="pf-laptop">
-                  <div class="scr-wrap"><div class="scr"><img src="assets/portfolio/collab.png" alt="Collab Gestão" loading="lazy"/></div></div>
+                  <div class="scr-wrap"><div class="scr"><img src="/images/collab-lp.webp" alt="Collab Gestão" loading="lazy"/></div></div>
                   <div class="base"></div>
                 </div>
               </div>
@@ -338,7 +356,7 @@
               </div>
               <div class="pf-slide-visual">
                 <div class="pf-laptop">
-                  <div class="scr-wrap"><div class="scr"><img src="assets/portfolio/opium.png" alt="Opium Motel" loading="lazy"/></div></div>
+                  <div class="scr-wrap"><div class="scr"><img src="/images/opium.png" alt="Opium Motel" loading="lazy"/></div></div>
                   <div class="base"></div>
                 </div>
               </div>
@@ -354,7 +372,7 @@
               </div>
               <div class="pf-slide-visual">
                 <div class="pf-laptop">
-                  <div class="scr-wrap"><div class="scr"><img src="assets/portfolio/vaiderural.png" alt="Vai de Rural" loading="lazy"/></div></div>
+                  <div class="scr-wrap"><div class="scr"><img src="/images/vaiderural-lp.webp" alt="Vai de Rural" loading="lazy"/></div></div>
                   <div class="base"></div>
                 </div>
               </div>
@@ -408,7 +426,7 @@
             <p class="ai-desc">Analisa os dados da sua empresa em tempo real e sinaliza pontos de risco antes que virem problema.</p>
             <div class="ai-meta">
               <span class="status"><span class="dot"></span>Online</span>
-              <span class="ver">v2.0 · Sistema neural</span>
+              <span class="ver">v2.0 · Analista · Churn · Dados</span>
             </div>
           </div>
         </a>
@@ -431,7 +449,7 @@
             <p class="ai-desc">Gera contratos e recibos automaticamente, e tira dúvidas da equipe sobre conceitos e legislações.</p>
             <div class="ai-meta">
               <span class="status"><span class="dot"></span>Online</span>
-              <span class="ver">v2.0 · Neural engine</span>
+              <span class="ver">v2.0 · Contratos · Recibos · Dúvidas</span>
             </div>
           </div>
         </a>
@@ -746,7 +764,7 @@
     <div class="foot-grid">
       <div class="foot-brand">
         <a href="#top" class="brand" aria-label="Agência Átomo">
-          <img class="brand-logo" src="assets/atomo-logo-v2.png" alt="Agência Átomo" />
+          <img class="brand-logo" src="/images/logo_atomo.webp" alt="Agência Átomo" />
         </a>
         <p class="foot-tag">Marketing orientado por dados, tecnologia e crescimento de negócios.</p>
 
@@ -760,10 +778,10 @@
           <a href="mailto:contato@agenciaatomo.com.br" aria-label="E-mail">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/company/ag-atomo/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.34 18.36H5.7V9.79h2.64v8.57zM7.02 8.62a1.53 1.53 0 1 1 0-3.07 1.53 1.53 0 0 1 0 3.07zm11.34 9.74h-2.64v-4.17c0-.99-.02-2.27-1.38-2.27-1.38 0-1.6 1.08-1.6 2.2v4.24h-2.64V9.79h2.54v1.17h.04c.35-.66 1.21-1.36 2.49-1.36 2.66 0 3.15 1.75 3.15 4.02v4.74z"/></svg>
           </a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <a href="https://www.facebook.com/agenciaatomo/" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3.5h-3V8c0-1 .3-1.7 1.8-1.7H17V3.2c-.3 0-1.3-.2-2.5-.2-2.5 0-4 1.4-4 4v2H8v3.5h2.5V21h3z"/></svg>
           </a>
           <a href="https://www.google.com/maps/place/R.+Paulino+Fonseca,+591+-+Alto+Maron,+Vit%C3%B3ria+da+Conquista+-+BA,+45005-370" target="_blank" rel="noopener" aria-label="Localização">
